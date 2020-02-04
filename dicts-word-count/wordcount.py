@@ -7,6 +7,7 @@ def word_counter(file_name):
     for line in words:
         #creating a loop to itirate over words line by line
         line = line.rstrip()
+        line = line.lower()
         #stripping the current line of blank space on the right side
         split_line = line.split(" ")
         #returing a list of strings broken up by one space
